@@ -1,0 +1,17 @@
+div {
+    height: 190px;
+    width: 190px;
+    box-shadow: 2px 2px 2px white, 4px 4px 4px black, 5px 5px 5px black;
+    display: inline-block;
+}
+
+div:hover {
+    color: gray;
+    background-color: gray;
+}
+
+img {
+    height: 190px;
+    width: 190px;
+    margin: 5px 5px;
+}

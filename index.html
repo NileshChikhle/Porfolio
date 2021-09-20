@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="text/css" href="css/contact.css">
+    <script href="js/portfolio.js"></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="nav">
+            <a class="a" href="#">HOME</a>
+            <a class="b" href="aboutus.html">ABOUT ME</a>
+            <a class="c" href="gallery.html">GALLERY</a>
+            <a class="d" href="contact.html">CONTACT US</a>
+        </div>
+        <div class="content">
+            <div class="home">
+                <h1>Nilesh Chikhle</h1>
+                <h3>ComputerScience Student</h3>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('active').click(function() {
+                //alert("i am click"); 
+                var selected = $(this);
+                $('a').removeClass('active');
+                $(selected).addClass('active');
+            });
+            var $a = $('a'),
+                $b = S('b'),
+                $c = S('c'),
+                $d = S('d'),
+                $home = S('home'),
+                $aboutus = S('aboutus');
+            $a.click(function() {
+                $home.fadeIn();
+                $aboutus.fadeoOut();
+            });
+            $b.click(function() {
+                $aboutus.fadeIn();
+                $home.fadeOut();
+            })
+        });
+    </script>
+
+</body>
+
+</html>
